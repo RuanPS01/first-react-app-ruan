@@ -1,0 +1,88 @@
+header#main-header{
+    height: 60px;
+    width: flex;
+    background: #0072af;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    height: 60px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+.logo:hover{
+    height: 150px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.navbar{
+    background: #000;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    -webkit-box-shadow: 0px 9px 16px rgba(114, 125, 140, 0.344), 0px -9px 16px rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.446), 0px -2px 16px rgba(0, 0, 0, 0.583);
+    transition: all 0.5s;
+}
+.navbar:hover{
+    background: #000;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    -webkit-box-shadow: 0px 9px 16px rgba(114, 125, 140, 0.344), 0px -9px 16px rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.446), 0px -2px 16px rgba(0, 0, 0, 0.583);
+    transition: all 0.5s;
+}
+
+.dropdown{
+    animation: fade-in 0.4s linear;
+    transition: all 0.2s;
+}
+.dropdown:hover{
+    font-size: 15pt;
+    transition: all 0.2s;
+}
+.dropdownTitle:hover, .item-navbar:hover{
+    animation: fade-in 0.2s linear;
+}
+
+@keyframes fade-in{
+    from{
+        opacity: 0;
+    }
+    to{
+        zoom: 2;
+        opacity: 1;
+    }
+}
+
+
+@keyframes slide-in-down{
+from{
+transform: translate3d(0, -100%, 0);
+visibility: visible;
+}
+to{
+transform: translate3d(0, 0, 0);
+}
+}
+

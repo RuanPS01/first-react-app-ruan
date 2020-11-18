@@ -1,0 +1,187 @@
+.logoDetails{ 
+    height: 0px;
+    width: 100%;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+    border-radius: 30px;
+    overflow: clip;
+    filter: blur(3px);
+}
+.logoDetails:hover{  
+    width: 100%;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+    border-radius: 10px;
+    filter: blur(0);
+}
+
+.tabs:hover{
+    height: 50px;
+    justify-content: center;
+    transition: all 0.5s;
+}
+.product-list{
+    max-width: 700px;
+    margin: 20px auto 0;
+    padding: 0 20px;
+}
+
+.product-list article{
+    /*background: #FFF;*/
+    background:linear-gradient(to right, rgba(0, 0, 0, 0.049),transparent);
+    background-color:rgb(255, 255, 255);/*this your primary color*/
+    border: 0px solid #DDD;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 9px 9px 16px rgba(114, 125, 140, 0.344), -9px -9px 16px rgba(255, 255, 255, 0.5);
+    box-shadow: 9px 9px 16px rgba(167, 170, 175, 0.405), -9px -9px 16px rgba(255, 255, 255, 0.316);
+    transition: all 0.3s;
+}
+.product-list article:hover{
+    background: #FFF;
+    border: 10px solid #9abfd3;
+    border-radius: 30px;
+    padding: 20px;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 9px 9px 16px rgba(114, 125, 140, 0.344), -9px -9px 16px rgba(255, 255, 255, 0.5);
+    box-shadow: 9px 9px 30px rgba(0, 0, 0, 0.234), -9px -9px 16px rgba(0, 0, 0, 0.165);
+}
+
+.product-list strong{
+    transition: all 0.3s;
+}
+
+.product-list article:hover .logoDetails,
+.product-list article:hover ~ .logoDetails {
+    height: 150px;
+    transition: all 0.3s;
+    animation: fade-in 0.3s linear;
+    
+}
+
+.product-list article:hover strong,
+.product-list article:hover ~ strong {
+    font-size: 50px;
+    color: #0072af;
+    transition: all 0.3s;
+    animation: fade-in 0.4s linear;
+}
+.product-list article:hover .div-line,
+.product-list article:hover ~ .div-line {
+    height: 0px;
+    transition: all 0.3s;
+}
+
+
+
+.product-list article:hover p,
+.product-list article:hover ~ p{
+    color: #0172AF;
+    transition: all 0.3s;
+}
+
+@keyframes blur-in{
+    from{
+    opacity: 0;
+    filter: blur(4px);
+    }
+    to{
+    opacity: 1;
+    filter: blur(10px);
+    }
+}
+
+@keyframes fade-in{
+from{
+opacity: 0;
+}
+to{
+opacity: 1;
+}
+}
+
+.product-list article p {
+    font-size: 16px;
+    color: #999;
+    margin-top: 5px;
+    line-height: 24px;   
+    transition: all 0.3s;
+}
+
+.product-list article a{
+    height: 42px;
+    border-radius: 5px;
+    border: 0px solid #0072af;
+    background: #0072af27;
+    margin-top: 10px;
+    color: #0072af;
+    font-size: 16px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    
+}
+
+.product-list article a:hover{
+    height: 60px;
+    border-radius: 40px;
+    background:linear-gradient(to right,  #0072af,transparent);
+    background-color: #00517c;/*this your primary color*/
+    color: #FFF;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.product-list .actions{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    
+}
+.product-list .actions button{
+    padding: 10px;
+    border-radius: 5px;
+    border: 0;
+    background: #0072af;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    -webkit-box-shadow: 9px 9px 16px rgba(114, 125, 140, 0.672), -9px -9px 16px rgba(255, 255, 255, 0.5);
+    box-shadow: 9px 9px 16px rgba(108, 117, 131, 0.631),
+    -9px -9px 16px rgba(255, 255, 255, 0.672);
+    transition: all 0.3s;
+}
+
+.product-list .actions button:hover{
+    opacity: 0.7;
+    
+}
+
+.product-list .actions button[disabled]{
+    opacity: 0.5;
+    cursor: default;
+}
+.product-list .actions button[disabled]:hover{
+    opacity: 0.5;
+    cursor: default;
+}
+
+.div-line{
+    background: #DDD;
+    color: #DDD;
+    height: 1px;
+    width: 100%;
+    margin-top: 5px;
+    transition: all 0.3s;
+}
