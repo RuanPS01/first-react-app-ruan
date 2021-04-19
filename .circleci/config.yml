@@ -14,8 +14,11 @@ jobs:
     docker:
       - image: cimg/node:15.14.0
     steps:
-      - run: echo "this is the start job"
-      - run: yarn start
+      - checkout
+      - node/install-packages:
+          pkg-manager: yarn
+      - run: echo "this is the build job"
+      - run: yarn build
 
 workflows:
   yarn-and-build:
