@@ -3,12 +3,25 @@ orbs: # declare what orbs we are going to use
 
 version: 2.1 # using 2.1 provides access to orbs and other features
 
-workflows:
-  matrix-tests:
-    jobs:
-      - node/test:
-          version: 13.11.0 --passWithNoTests
-      - node/test:
-          version: 12.16.0 --passWithNoTests
-      - node/test:
-          version: 10.19.0 --passWithNoTests
+jobs:
+   yarn:
+     steps:
+       - run:
+           name: Yarn Install
+           command: yarn
+   build:
+     steps:
+       - run:
+           name: Yarn Build
+           command: yarn build
+
+ workflows:
+   yarn-and-build:
+     jobs:
+       - yarn
+       - build:
+           requires:
+             - yarn # only deploy once build job has completed
+           filters:
+             branches:
+               only: master # only deploy on the master branch
