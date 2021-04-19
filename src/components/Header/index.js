@@ -16,7 +16,7 @@ export default class Header extends Component {
                             <NavDropdown className="dropdown" title="More" id="basic-nav-dropdown">
                                 <NavDropdown.Item className="dropdown" href="#action/3.1">Profile</NavDropdown.Item>
                                 <NavDropdown.Item className="dropdown" href="#action/3.2">Statistics</NavDropdown.Item>
-                                <NavDropdown.Item className="dropdown" href="#action/3.3">Effects</NavDropdown.Item>
+                                <NavDropdown.Item className="dropdown" href="#action/3.3">Effects Lab</NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item className="dropdown" href="https://www.nouvenn.com">About Nouvenn</NavDropdown.Item>
                                 <NavDropdown.Item className="dropdown" href="#action/3.5">Credits</NavDropdown.Item>
