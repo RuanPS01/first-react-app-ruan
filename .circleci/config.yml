@@ -1,7 +1,14 @@
-version: 2.1
-orbs:
-    hello: circleci/hello-build@0.0.5
+orbs: # declare what orbs we are going to use
+  node: circleci/node@2.0.2 # the node orb provides common node-related configuration
+
+version: 2.1 # using 2.1 provides access to orbs and other features
+
 workflows:
-    "Hello Workflow":
-        jobs:
-          - hello/hello-build
+  matrix-tests:
+    jobs:
+      - node/test:
+          version: 13.11.0
+      - node/test:
+          version: 12.16.0
+      - node/test:
+          version: 10.19.0
