@@ -31,6 +31,5 @@ jobs:
         with: 
           node-version: 12.x
       - run: yarn
-      - run: yarn test
         env: 
           CI: true
