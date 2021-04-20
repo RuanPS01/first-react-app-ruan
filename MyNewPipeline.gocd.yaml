@@ -32,5 +32,5 @@ pipelines:
             timeout: 0
             tasks:
             - exec:
-                command: echo "Build step!"
+                command: echo 'Build step!'
                 run_if: passed
