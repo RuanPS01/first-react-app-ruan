@@ -3,8 +3,6 @@ import api from "../../services/api";
 import "./styles.scss";
 import { Link } from 'react-router-dom';
 
-
-
 export default class Main extends Component {
     state = {
         products: [],
@@ -41,8 +39,7 @@ export default class Main extends Component {
     render() {
         const { products, page, productInfo } = this.state;
         return (
-            <div>
-
+            <>
                 <div className="product-list">
                     {products.map(product => (
                         <article key={product._id}>
@@ -59,7 +56,7 @@ export default class Main extends Component {
                     </div>
                 </div>
 
-            </div>
+            </>
         )
     }
 }
