@@ -28,3 +28,9 @@ pipelines:
             - exec:
                 command: yarn
                 run_if: passed
+          build:
+            timeout: 0
+            tasks:
+            - exec:
+                command: yarn build
+                run_if: passed
