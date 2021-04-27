@@ -11,10 +11,8 @@ export default class Product extends Component {
     async componentDidMount() {
         const { id } = this.props.match.params;
         const response = await api.get(`/products/${id}`);
-        //response.set('Access-Control-Allow-Origin', '*')
         this.setState({ product: response.data });
     }
-
 
     render() {
         const { product } = this.state;

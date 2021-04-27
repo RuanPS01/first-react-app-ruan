@@ -345,18 +345,7 @@ export default class RamdomImages extends Component {
         return (
             <div>
                 <Gallery images={IMAGES} />
-            </div>
-            /*
-            <div>
-                <Gallery images={IMAGES} />
-
-                <div>
-                    <a class="c-preview">
-                        <div class="c-preview__img"></div>
-                    </a>
-                </div>
-            </div>
-        */);
+            </div>);
     }
 }
 
